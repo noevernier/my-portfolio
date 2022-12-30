@@ -47,17 +47,25 @@
     padding: var(--gap);
     background: var(--entry);
     border-radius: var(--radius);
-    transition: transform 0.1s;
+    transition: transform 0.1s, border-color 0.2s;
     border: 1px solid var(--border);
-    border-color: rgb(195, 195, 195);
+    border-color: rgb(60, 60, 60);
+}
+
+.post-entry:hover {
+    border-color: rgb(140, 140, 140);
+}
+
+.post-entr-project:hover {
+    border-color: rgb(140, 140, 140);
 }
 
 .post-entry:active {
-    transform: scale(0.96);
+    transform: scale(0.98);
 }
 
 .post-entry-project:active {
-    transform: scale(0.96);
+    transform: scale(0.98);
 }
 
 
