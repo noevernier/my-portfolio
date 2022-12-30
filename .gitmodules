@@ -1,0 +1,8 @@
+[submodule "noevernier.github.io"]
+	path = noevernier.github.io
+	url = https://github.com/noevernier/noevernier.github.io.git
+	branch = main
+[submodule "public"]
+	path = public
+	url = https://github.com/noevernier/noevernier.github.io.git
+	branch = main
