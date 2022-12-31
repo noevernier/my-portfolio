@@ -45,6 +45,10 @@ button#theme-toggle {
     margin: auto 4px;
 }
 
+body {
+    transition: all 0.3s;
+}
+
 body.dark #moon {
     vertical-align: middle;
     display: none;

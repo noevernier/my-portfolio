@@ -2,8 +2,11 @@
     {{- with .Site.Params.profileMode }}
     <div class="profile_inner">
         {{- if .imageUrl -}}
-        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
+        <div class="profile-img">
+            <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        </div>
+        
         {{- end }}
         <h1>{{ .title | default $.Site.Title | markdownify }}</h1>
         <div class="profile-description">{{ .description | markdownify }}</div>
