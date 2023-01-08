@@ -1,3 +1,13 @@
+<!-- Prepare a container for your calendar. -->
+<script
+  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+>
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+
+<link rel="stylesheet" href="themes/papermod/assets/css/common/github-contributions.css" />
+
 <div class="profile">
     {{- with .Site.Params.profileMode }}
     <div class="profile_inner">
@@ -21,6 +31,17 @@
             {{- end }}
         </div>
         {{- end }}
+
+        <div class="github-contributions">
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+            <script>
+                new GitHubCalendar(".calendar", "noevernier",  { responsive: true , global_stats: false, cache: 0, tooltips: false});
+            </script>
+        </div>
     </div>
     {{- end}}
+    
 </div>
