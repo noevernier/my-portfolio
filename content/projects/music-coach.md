@@ -1,6 +1,7 @@
 ---
 title: MusiCoach
 dateMonthYear: April 2022
+lastmod: 2022-11-10
 description:  MusiCoach is a smart musical composition assistant destined towards beginners. 
 type: page
 topic: project
